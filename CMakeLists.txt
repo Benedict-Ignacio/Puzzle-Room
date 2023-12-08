@@ -67,4 +67,9 @@ add_executable(PuzzleRoom
 install(TARGETS PuzzleRoom RUNTIME DESTINATION bin)
 include(CPack)
 
+# Creates packaged executable form of project 
+install(TARGETS PuzzleRoom RUNTIME DESTINATION bin)
+include(CPack)
+#
+
 target_link_libraries(runAllTests gtest gtest_main)
