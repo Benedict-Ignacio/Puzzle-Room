@@ -62,6 +62,9 @@ add_executable(runAllTests
 add_executable(PuzzleRoom
     src/main.cpp
     ${SOURCE_FILES}
-)   
+)
+
+install(TARGETS PuzzleRoom RUNTIME DESTINATION bin)
+include(CPack)
 
 target_link_libraries(runAllTests gtest gtest_main)
